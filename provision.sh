@@ -5,7 +5,7 @@ sudo apt-get -y autoremove
 
 # get ready for webapp
 sudo apt-get -y install git
-sudo apt-get -y install build-essential gcc make  # Maybe needed.
+sudo apt-get -y install build-essential libssl-dev gcc make  # Maybe needed.
 
 echo ""
 echo "Almost done.  The machine is prepared..."

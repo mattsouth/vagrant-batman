@@ -1,0 +1,4 @@
+32c32
+<     "muffin": "~>0.7.0",
+---
+>     "muffin": "git://github.com/airhorns/muffin.git#9cfaf9d29187578d00b886a8fa20cd218008ddb3",

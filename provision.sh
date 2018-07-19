@@ -9,10 +9,6 @@ sudo apt-get -y install build-essential libssl-dev gcc make  # Maybe needed.
 
 echo ""
 echo "Almost done.  The machine is prepared..."
-echo "Now you need to run the following commands:"
+echo "Now you need to run the following commands to build and test batman:"
 echo "> vagrant ssh"
-echo "> curl https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash"
-echo "> source ~/.bashrc"
-echo "> nvm install 0.8.0"
-echo "> git clone https://github.com/jhnvz/batman"
-echo "> cd batman"
+echo "> /vagrant/postinstall.sh"

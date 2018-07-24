@@ -7,6 +7,13 @@ cd batman
 git checkout v0.14.1
 npm config set registry="http://registry.npmjs.org/"
 patch package.json /vagrant/package.json.diff
+
+# Fix issue "path.existsSync is now called fs.existsSync" by using older version of coffeescript
+source ~/.profile
+nvm --version
+npm install coffeescript@1.8.0
+
+# Ready to build
 npm install
 node_modules/.bin/cake build
 node_modules/.bin/cake test

@@ -8,6 +8,9 @@ git checkout v0.14.1
 npm config set registry="http://registry.npmjs.org/"
 patch package.json /vagrant/package.json.diff
 
+# Fix issue with Example batmap
+patch examples/batmap.html /vagrant/batmap.html.patch.diff
+
 # Fix issue "path.existsSync is now called fs.existsSync" by using older version of coffeescript
 source ~/.profile
 nvm --version
